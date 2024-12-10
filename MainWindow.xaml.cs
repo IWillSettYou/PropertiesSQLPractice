@@ -72,6 +72,7 @@ namespace IngatlanApp
 
                     command.ExecuteNonQuery();
                     MessageBox.Show("Adat feltöltve!");
+                    connection.Close();
                 }
             }
             catch (Exception ex)
