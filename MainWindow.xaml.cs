@@ -40,7 +40,13 @@ namespace IngatlanApp
 
             if (!int.TryParse(PriceTextBox.Text, out price))
             {
-                MessageBox.Show("Az árnak számnak kell lennie.");
+                MessageBox.Show("Az árnak számnak kell lennie!");
+                return;
+            }
+
+            if(price !< 0)
+            {
+                MessageBox.Show("Az árnak 0-nál nagyobbnak kell lennie!");
                 return;
             }
 
