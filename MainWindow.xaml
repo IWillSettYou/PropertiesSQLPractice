@@ -1,12 +1,25 @@
-﻿<Window x:Class="PropertiesSQLPractice.MainWindow"
+﻿<Window x:Class="IngatlanApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PropertiesSQLPractice"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Ingatlan Adatfeltöltés" Height="400" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Leírás:" />
+            <TextBox Name="DescriptionTextBox" />
 
+            <TextBlock Text="Kategória:" />
+            <ComboBox Name="CategoryComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
+
+
+            <TextBlock Text="Ár:" />
+            <TextBox Name="PriceTextBox" />
+
+            <TextBlock Text="Kép URL:" />
+            <TextBox Name="ImageUrlTextBox" />
+
+            <CheckBox Name="TehermentesCheckBox" Content="Tehermentes" />
+
+            <Button Content="Feltöltés" Click="SubmitButton_Click" Margin="0,10,0,0" />
+        </StackPanel>
     </Grid>
 </Window>
